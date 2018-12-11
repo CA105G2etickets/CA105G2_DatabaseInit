@@ -45,7 +45,7 @@ public class InsertInto_Event_BLOB_CLOB {
 		    		}		    			
 		    	}
 		    }
-		}
+		} 
 		 
 		System.out.println("完成BLOB和CLOB的更新");		
 	}
