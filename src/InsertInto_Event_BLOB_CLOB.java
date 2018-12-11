@@ -31,7 +31,7 @@ public class InsertInto_Event_BLOB_CLOB {
 			String folderName = folderList.get(i).folderName;
 			File dir = new File(folderName);
 		    String files[] = dir.list(); 
-		    
+		     
 		    if (!dir.isDirectory()) {
 		    	System.out.println("找不到 " + folderName + " 資料夾");
 		    } else if (files.length == 0) {
