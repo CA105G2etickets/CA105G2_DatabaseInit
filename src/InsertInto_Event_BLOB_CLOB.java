@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class InsertInto_Event_BLOB_CLOB {
 	
@@ -16,17 +17,18 @@ public class InsertInto_Event_BLOB_CLOB {
 	private static final String PASSWORD = "123456";
 	
 	public static void main(String[] args) {
+		ArrayList<FolderInfo> folderList = new ArrayList<FolderInfo>();
 		
-		FolderInfo[] folders = new FolderInfo[5];		
-		folders[0] = new FolderInfo("BLOB_EVENT", "EVE_NO", 7);
-		folders[1] = new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5);		
-		folders[2] = new FolderInfo("BLOB_VENUE", "VENUE_NO", 4);		
-		folders[3] = new FolderInfo("CLOB_EVENT_TITLE", "EVETIT_NO", 5);
-		folders[4] = new FolderInfo("CLOB_VENUE", "VENUE_NO", 4);		
+					
+		folderList.add(new FolderInfo("BLOB_EVENT", "EVE_NO", 7));
+		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));		
+		folderList.add(new FolderInfo("BLOB_VENUE", "VENUE_NO", 4));		
+		folderList.add(new FolderInfo("CLOB_EVENT_TITLE", "EVETIT_NO", 5));
+		folderList.add(new FolderInfo("CLOB_VENUE", "VENUE_NO", 4));		
 		
-		for(int i = 0; i < folders.length; i++) {
+		for(int i = 0; i < folderList.size(); i++) {
 			
-			String folderName = folders[i].folderName;
+			String folderName = folderList.get(i).folderName;
 			File dir = new File(folderName);
 		    String files[] = dir.list(); 
 		    
@@ -37,9 +39,9 @@ public class InsertInto_Event_BLOB_CLOB {
 		    } else {
 		    	for (int j = 0; j < files.length; j++) {		    		
 		    		if ("BLOB".equals(folderName.substring(0, 4))) {
-		    			writeBLOB(folderName, files[j], folders[i].pkName, folders[i].pkNameLength);
+		    			writeBLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength);
 		    		} else {
-		    			writeCLOB(folderName, files[j], folders[i].pkName, folders[i].pkNameLength);		    			
+		    			writeCLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength);		    			
 		    		}		    			
 		    	}
 		    }
