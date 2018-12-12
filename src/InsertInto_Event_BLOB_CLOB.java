@@ -24,8 +24,12 @@ public class InsertInto_Event_BLOB_CLOB {
 		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));		
 		folderList.add(new FolderInfo("BLOB_VENUE", "VENUE_NO", 4));		
 		folderList.add(new FolderInfo("CLOB_EVENT_TITLE", "EVETIT_NO", 5));
-		folderList.add(new FolderInfo("CLOB_VENUE", "VENUE_NO", 4));		
-		 
+		folderList.add(new FolderInfo("CLOB_VENUE", "VENUE_NO", 4));
+		folderList.add(new FolderInfo("BLOB_GOODS", "GOODS_NO", 8));
+		folderList.add(new FolderInfo("CLOB_GOODS", "GOODS_NO", 8));
+		
+		
+		
 		for(int i = 0; i < folderList.size(); i++) {
 			
 			String folderName = folderList.get(i).folderName;
