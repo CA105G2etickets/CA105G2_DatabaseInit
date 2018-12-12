@@ -915,6 +915,51 @@ VALUES
 ('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '學友 經典世界巡迴演唱會–2019高雄站', 
 TO_DATE('2019-01-04','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), 3, 'confirmed', 
 TO_DATE('2018-10-01','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), '5');
+--------------------------------------------------------
+--  Jim Gaffigan Quality Time Tour 2019 Live in Taipei ***E0005***
+--------------------------------------------------------
+INSERT INTO EVENT_TITLE
+(EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
+EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
+LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
+VALUES
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'J',  'TRP2', 'Jim Gaffigan Quality Time Tour 2019 Live in Taipei', 
+TO_DATE('2019-03-31','YYYY-MM-DD'), TO_DATE('2019-03-31','YYYY-MM-DD'), 1, 'confirmed', 
+TO_DATE('2018-12-12','YYYY-MM-DD'), TO_DATE('2019-03-31','YYYY-MM-DD'), '5');
+--------------------------------------------------------
+--  《Since 5566》台北小巨蛋演唱會 - 一段愛與我們的故事 ***E0006*** 
+--------------------------------------------------------
+INSERT INTO EVENT_TITLE
+(EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
+EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
+LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
+VALUES
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '《Since 5566》台北小巨蛋演唱會 - 一段愛與我們的故事', 
+TO_DATE('2019-02-23','YYYY-MM-DD'), TO_DATE('2019-02-23','YYYY-MM-DD'), 1, 'confirmed', 
+TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-02-23','YYYY-MM-DD'), '5');
+--------------------------------------------------------
+--  MAROON 5 RED PILL BLUES TOUR LIVE IN KAOHSIUNG ***E0007*** 
+--------------------------------------------------------
+INSERT INTO EVENT_TITLE
+(EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
+EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
+LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
+VALUES
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'MAROON 5 RED PILL BLUES TOUR LIVE IN KAOHSIUNG', 
+TO_DATE('2019-03-01','YYYY-MM-DD'), TO_DATE('2019-03-01','YYYY-MM-DD'), 1, 'confirmed', 
+TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-03-01','YYYY-MM-DD'), '5');
+--------------------------------------------------------
+--  Mr.Children Tour 2018-19 重力與呼吸 Live in Taiwan ***E0008*** 
+--------------------------------------------------------
+INSERT INTO EVENT_TITLE
+(EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
+EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
+LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
+VALUES
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'Mr.Children Tour 2018-19 重力與呼吸 Live in Taiwan', 
+TO_DATE('2019-02-01','YYYY-MM-DD'), TO_DATE('2019-02-02','YYYY-MM-DD'), 1, 'confirmed', 
+TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-02-02','YYYY-MM-DD'), '5');
+
 
 
 

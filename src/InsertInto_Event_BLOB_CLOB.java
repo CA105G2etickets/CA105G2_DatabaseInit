@@ -19,13 +19,14 @@ public class InsertInto_Event_BLOB_CLOB {
 	public static void main(String[] args) {
 		ArrayList<FolderInfo> folderList = new ArrayList<FolderInfo>();
 		
-					
+		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));					
+		folderList.add(new FolderInfo("CLOB_EVENT_TITLE", "EVETIT_NO", 5));			
 		
-		folderList.add(new FolderInfo("BLOB_EVENT", "EVE_NO", 7));
-		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));		
-		folderList.add(new FolderInfo("BLOB_VENUE", "VENUE_NO", 4));		
-		folderList.add(new FolderInfo("CLOB_EVENT_TITLE", "EVETIT_NO", 5));
+		folderList.add(new FolderInfo("BLOB_VENUE", "VENUE_NO", 4));	
 		folderList.add(new FolderInfo("CLOB_VENUE", "VENUE_NO", 4));
+		
+		folderList.add(new FolderInfo("BLOB_EVENT", "EVE_NO", 7));		
+
 		folderList.add(new FolderInfo("BLOB_GOODS", "GOODS_NO", 8));
 		folderList.add(new FolderInfo("CLOB_GOODS", "GOODS_NO", 8));
 		
