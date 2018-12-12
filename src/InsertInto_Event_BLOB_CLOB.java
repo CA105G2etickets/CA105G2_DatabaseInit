@@ -20,6 +20,7 @@ public class InsertInto_Event_BLOB_CLOB {
 		ArrayList<FolderInfo> folderList = new ArrayList<FolderInfo>();
 		
 					
+		
 		folderList.add(new FolderInfo("BLOB_EVENT", "EVE_NO", 7));
 		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));		
 		folderList.add(new FolderInfo("BLOB_VENUE", "VENUE_NO", 4));		
