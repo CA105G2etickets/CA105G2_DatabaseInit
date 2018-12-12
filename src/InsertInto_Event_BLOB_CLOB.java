@@ -29,7 +29,7 @@ public class InsertInto_Event_BLOB_CLOB {
 
 		folderList.add(new FolderInfo("BLOB_GOODS", "GOODS_NO", 8));
 		folderList.add(new FolderInfo("CLOB_GOODS", "GOODS_NO", 8));
-		
+		 
 		
 		
 		for(int i = 0; i < folderList.size(); i++) {
