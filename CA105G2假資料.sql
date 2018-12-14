@@ -15,15 +15,15 @@
 --------------------------------------------------------
 
 --------------------------------------------------------
--------------------------�Ƨѿ�--------------------------
--- ? MEMBER����j�Y�K���s�W
--- ? TRANSACTION_HISTORY����W�u�ɥi�ϥ�DEFAULT CURRENT_TIMESTAMP,�s�W��Ʈɷ|�۰ʶ�J����ɶ�(�����]�t�ק��Ʈ�)
+-------------------------備忘錄--------------------------
+-- • MEMBER表格大頭貼未新增
+-- • TRANSACTION_HISTORY表格上線時可使用DEFAULT CURRENT_TIMESTAMP,新增資料時會自動填入日期時間(但不包含修改資料時)
 --------------------------------------------------------
 
 
 
 --------------------------------------------------------
---  �ᱼ����
+--  丟掉表格
 --------------------------------------------------------
 alter session set deferred_segment_creation=false;
 
@@ -97,10 +97,10 @@ DROP SEQUENCE member_no_seq;
 
 
 ----------------------------------------------------------------------------------------------------------------
---  <��L�}�l>
+--  <其他開始>
 ----------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------
---  �إߪ���
+--  建立表格
 --------------------------------------------------------
 --------------------------------------------------------
 --  for Table MEMBER
@@ -125,26 +125,26 @@ NOMAXVALUE
 NOCYCLE
 NOCACHE;
 
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�d�a��', 'vladylo98@gmail.com', '0911-484363', 'H179034814' , 'vladylo98' , '123456' , '98376' , to_timestamp('1991/9/1  18:27:31','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���̬�', 'LuoYiShan@rhyta.com', '0933-169030', 'Y274969950' , 'Thos1958' , 'eoGh4ohy' , '2245' , to_timestamp('1991/11/13  00:42:24','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '������', 'YaoRuYu@jourrapide.com', '0902-277481' , 'V265219642' , 'Toopece40' , 'ooy0Eec0zoo' , '4586' , to_timestamp('1992/10/22  09:08:55','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '��ɦ|', 'PanYiFan@dayrep.com', '0937-626715' , 'T270735473' , 'Hunned' , 'rieZoow2' , '6543' , to_timestamp('1993/7/30  14:08:07','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���ͭ�', 'ZhuangRuiQing@dayrep.com', '0937-521590' , 'H200290577' , 'Etwithe61' , 'Cie6feow' , '82015' , to_timestamp('1996/6/10  09:16:52','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���Ϊ�', 'DaiJiaFang@dayrep.com', '0994-464268' , 'V271833158' , 'Anducalliew' , 'ieGhae7yai' , '7071' , to_timestamp('1998/9/4  22:18:10','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���஦', 'YinChengEn@teleworm.us', '0917-059007' , 'E127239706' , 'Lorm1979' , 'petadohTh9' , '2925' , to_timestamp('1998/12/15  21:15:07','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���ӧ�', 'GuoZhiTing@jourrapide.com', '0907-434925', 'L165236446' , 'Foody1996' , 'aeHoo6shi' , '5365' , to_timestamp('1999/5/31  04:54:17','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���Ϊ�', 'SheJiaFang@armyspy.com', '0958-557370' , 'L209596367' , 'Puntore' , 'rahMee4ee' , '7865' , to_timestamp('2002/5/19  00:54:14','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), 'ù�B��', 'LuoBaYan@jourrapide.com', '0902-456073' , 'R118671723' , 'Andelibubled' , 'VimiNg1eom' , '2807' , to_timestamp('2003/7/2  04:22:27','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�ź��t', 'FuYiYu@rhyta.com', '0985-692227' , 'I169183305' , 'Warvervaind' , 'Juang2xifo' , '1388' , to_timestamp('2004/2/5  17:32:37','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '��ɸ�', 'WangYiXuan@dayrep.com', '0977-966322' , 'O285639654' , 'Salletch' , 'pah7Aej7' , '1415' , to_timestamp('2004/11/25  11:51:22','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�����X', 'NiuYaQi@jourrapide.com', '0962-409820' , 'P296829261' , 'Ingend1956' , 'die4shohShae' , '7819' , to_timestamp('2006/5/27  09:14:25','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), 'Ĭ�R�y', 'SuJingYi@rhyta.com', '0927-178732' , 'Y264467921' , 'Eatexturink' , 'woaZ5pooG6oa' , '47902' , to_timestamp('2008/3/18  12:09:40','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�v�{�@', 'ShiWanTing@teleworm.us', '0947-324070' , 'C276106794' , 'Thentry' , 'Feix9teu8hi' , '1683' , to_timestamp('2011/4/2  00:12:20','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�d����', 'WuLongYi@jourrapide.com', '0989-092989' , 'C141647806' , 'Tintles' , 'aiDee0zeeTh' , '3880' , to_timestamp('2012/3/23  19:49:48','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '���T��', 'GuoMaoChang@rhyta.com', '0916-441993' , 'N110910088' , 'Howeenton' , 'ew7Uo0ai' , '6602' , to_timestamp('2013/9/30  11:00:06','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�թӮp', 'BoZhengFeng@dayrep.com', '0964-194913' , 'A160072505' , 'Thadince' , 'acheiY1kaef' , '1932' , to_timestamp('2016/10/10  06:46:39','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�x�Q�f', 'HongChuHui@teleworm.us', '0987-653650' , 'E249007273' , 'Thaide1992' , 'nai0eiR6ifu' , '3423' , to_timestamp('2018/7/25  20:38:16','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '�q�ż�', 'DuanJiaYing@teleworm.us', '0972-258975' , 'A289803497' , 'Betre1933' , 'UMah2ohx' , '65693' , to_timestamp('2018/12/10  03:00:30','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '吳冠宏', 'vladylo98@gmail.com', '0911-484363', 'H179034814' , 'vladylo98' , '123456' , '98376' , to_timestamp('1991/9/1  18:27:31','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '路依珊', 'LuoYiShan@rhyta.com', '0933-169030', 'Y274969950' , 'Thos1958' , 'eoGh4ohy' , '2245' , to_timestamp('1991/11/13  00:42:24','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '姚儒玉', 'YaoRuYu@jourrapide.com', '0902-277481' , 'V265219642' , 'Toopece40' , 'ooy0Eec0zoo' , '4586' , to_timestamp('1992/10/22  09:08:55','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '潘怡帆', 'PanYiFan@dayrep.com', '0937-626715' , 'T270735473' , 'Hunned' , 'rieZoow2' , '6543' , to_timestamp('1993/7/30  14:08:07','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '莊睿倩', 'ZhuangRuiQing@dayrep.com', '0937-521590' , 'H200290577' , 'Etwithe61' , 'Cie6feow' , '82015' , to_timestamp('1996/6/10  09:16:52','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '戴佳芳', 'DaiJiaFang@dayrep.com', '0994-464268' , 'V271833158' , 'Anducalliew' , 'ieGhae7yai' , '7071' , to_timestamp('1998/9/4  22:18:10','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '尹丞恩', 'YinChengEn@teleworm.us', '0917-059007' , 'E127239706' , 'Lorm1979' , 'petadohTh9' , '2925' , to_timestamp('1998/12/15  21:15:07','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '郭志廷', 'GuoZhiTing@jourrapide.com', '0907-434925', 'L165236446' , 'Foody1996' , 'aeHoo6shi' , '5365' , to_timestamp('1999/5/31  04:54:17','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '葉佳芳', 'SheJiaFang@armyspy.com', '0958-557370' , 'L209596367' , 'Puntore' , 'rahMee4ee' , '7865' , to_timestamp('2002/5/19  00:54:14','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '羅伯諺', 'LuoBaYan@jourrapide.com', '0902-456073' , 'R118671723' , 'Andelibubled' , 'VimiNg1eom' , '2807' , to_timestamp('2003/7/2  04:22:27','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '傅維宇', 'FuYiYu@rhyta.com', '0985-692227' , 'I169183305' , 'Warvervaind' , 'Juang2xifo' , '1388' , to_timestamp('2004/2/5  17:32:37','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '方怡萱', 'WangYiXuan@dayrep.com', '0977-966322' , 'O285639654' , 'Salletch' , 'pah7Aej7' , '1415' , to_timestamp('2004/11/25  11:51:22','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '牛雅琪', 'NiuYaQi@jourrapide.com', '0962-409820' , 'P296829261' , 'Ingend1956' , 'die4shohShae' , '7819' , to_timestamp('2006/5/27  09:14:25','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '蘇靜宜', 'SuJingYi@rhyta.com', '0927-178732' , 'Y264467921' , 'Eatexturink' , 'woaZ5pooG6oa' , '47902' , to_timestamp('2008/3/18  12:09:40','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '史琬婷', 'ShiWanTing@teleworm.us', '0947-324070' , 'C276106794' , 'Thentry' , 'Feix9teu8hi' , '1683' , to_timestamp('2011/4/2  00:12:20','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '吳隆衣', 'WuLongYi@jourrapide.com', '0989-092989' , 'C141647806' , 'Tintles' , 'aiDee0zeeTh' , '3880' , to_timestamp('2012/3/23  19:49:48','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '郭貿昌', 'GuoMaoChang@rhyta.com', '0916-441993' , 'N110910088' , 'Howeenton' , 'ew7Uo0ai' , '6602' , to_timestamp('2013/9/30  11:00:06','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '白承峰', 'BoZhengFeng@dayrep.com', '0964-194913' , 'A160072505' , 'Thadince' , 'acheiY1kaef' , '1932' , to_timestamp('2016/10/10  06:46:39','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '洪淑惠', 'HongChuHui@teleworm.us', '0987-653650' , 'E249007273' , 'Thaide1992' , 'nai0eiR6ifu' , '3423' , to_timestamp('2018/7/25  20:38:16','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '段嘉瑩', 'DuanJiaYing@teleworm.us', '0972-258975' , 'A289803497' , 'Betre1933' , 'UMah2ohx' , '65693' , to_timestamp('2018/12/10  03:00:30','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 
 
 
@@ -164,19 +164,19 @@ NOMAXVALUE
 NOCYCLE
 NOCACHE;
 
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�p��[�J�|���H','�C�H����ȥi�ӽФ@�ӷ|���b���A���|���b���ݸj�w�q�l�l��i�����ҡA�q�L���ҫ�A�~�i�}�l������ʲ��C','�ʲ�');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�p��[�J�|���H','�C�H����ȥi�ӽФ@�ӷ|���b���A���|���b���ݸj�w�q�l�l��i�����ҡA�q�L���ҫ�A�~�i�}�l������ʲ��C','�ʪ�');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'������ڦ�����t�γq���H�H','�Х��ˬd�U���l��C','��L');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�i�H�b�W���ʲ��ܡH','���t�Υثe�ȨѺ����PAPP�ʲ��C','�ʲ�');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�@���q��̦h�i�R�X�i���H','�ʲ��i�ƨ̬��ʦ����P���W�w�A�ʲ��e�Щ󬡰ʸ�T�d�ߨC�Ӭ��ʪ��ʲ��ݪ��C','�ʲ�');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�h�������y�{����H','�̤�Ƴ��󤤵إ���107�~5��16������r��10710128232�����i','�h��');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�i�H�����ܡH','�������P��h���A�бN����ʶR�������z�h���A�A�t���ʶR�A�Υi�ܲ����������x�i������','�h��');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�ʲ��i�H�}�ߵo���ܡH','���餺�t�N�x�T�ֵ|�A�K�}�ߵo���C','��L');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�ʪ��y�{����H','STEP 1�G�Х��[�J�|���CSTEP 2�G�N�z���ʶR���ӫ~�A��J�ʪ����A�ö}�l�i�J���b�{�ǡCSTEP 3�G��ܥI�ڤ覡�H�ζ�g�z�����f�a�}�CSTEP 4�G�������b�{�ǡC','�ʪ�');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'���ʬO����H','�N�O�j�a�@�_�ʶR�A�z�L����q�ʪ����馩�C','����');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'������S�H�[�J�ڵo�_�����ʡH','�D�ʴM��έ��~�O�X�ʪ����\���D�@�I�p�G�z��}�l�ϥΦX�ʡA��ĳ�z���B�Φۤv���H�ߧֳt���ΡA�úC�C�l�Ǥ@�ǩT�w���έ��A�p���z���X�ʤ~�|�V�ӶV���\�@�C','����');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'�i�H�������ܡH','�Цܲ����������x�i�������C','������');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'������ڤU�����FAPP�H','�]���ڭ̨èS���NAPP�W�[�C','��L');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'如何加入會員？','每人限制僅可申請一個會員帳號，此會員帳號需綁定電子郵件進行驗證，通過驗證後，才可開始於網站購票。','購票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'如何加入會員？','每人限制僅可申請一個會員帳號，此會員帳號需綁定電子郵件進行驗證，通過驗證後，才可開始於網站購票。','購物');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'為什麼我收不到系統通知信？','請先檢查垃圾郵件。','其他');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'可以在超商購票嗎？','本系統目前僅供網站與APP購票。','購票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'一筆訂單最多可買幾張票？','購票張數依活動有不同的規定，購票前請於活動資訊查詢每個活動的購票需知。','購票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'退票相關流程為何？','依文化部於中華民國107年5月16日文藝字第10710128232號公告','退票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'可以換票嗎？','換票等同於退票，請將原先購買的票券辦理退票，再另行購買，或可至票券轉讓平台進行轉讓','退票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'購票可以開立發票嗎？','票券內含代徵娛樂稅，免開立發票。','其他');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'購物流程為何？','STEP 1：請先加入會員。STEP 2：將您欲購買的商品，放入購物車，並開始進入結帳程序。STEP 3：選擇付款方式以及填寫您的收貨地址。STEP 4：完成結帳程序。','購物');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'團購是什麼？','就是大家一起購買，透過團體訂購爭取折扣。','團購');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'為什麼沒人加入我發起的團購？','主動尋找團員才是合購的成功之道哦！如果您剛開始使用合購，建議您先運用自己的人脈快速成團，並慢慢吸納一些固定的團員，如此您的合購才會越來越成功哦。','團購');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'可以轉讓票嗎？','請至票券轉讓平台進行轉讓。','轉讓票');
+Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'為什麼我下載不了APP？','因為我們並沒有將APP上架。','其他');
 
 
 
@@ -205,7 +205,7 @@ Insert into TRANSACTION_HISTORY values
 ('20180225'||'-'||LPAD(to_char(transaction_history_no_seq.NEXTVAL), 2, '0')
 ,'M000001'
 , to_timestamp('2018/2/5  17:32:37','YYYY/MM/DD  HH24:MI:SS') 
-,'�ʲ�'
+,'購票'
 ,'2500'
 ,'0'
 ,'1000'
@@ -214,7 +214,7 @@ Insert into TRANSACTION_HISTORY values
 ('20180828'||'-'||LPAD(to_char(transaction_history_no_seq.NEXTVAL), 2, '0')
 ,'M000005'
 , to_timestamp('2018/8/28  10:12:12','YYYY/MM/DD  HH24:MI:SS') 
-,'�ʲ�'
+,'購票'
 ,'5800'
 ,'0'
 ,'9500'
@@ -223,7 +223,7 @@ Insert into TRANSACTION_HISTORY values
 ('20181205'||'-'||LPAD(to_char(transaction_history_no_seq.NEXTVAL), 2, '0')
 ,'M000014'
 , to_timestamp('2018/12/5  19:55:39','YYYY/MM/DD  HH24:MI:SS') 
-,'�ʲ�'
+,'購票'
 ,'1000'
 ,'0'
 ,'200'
@@ -239,9 +239,9 @@ CREATE TABLE NEWS_CLASSIFICATION (
   NEWS_CLASSIFICATION  VARCHAR2(20));
 
 
-Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('N','�̷s����');
-Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('S','�������i');
-Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('E','�`�ز���');
+Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('N','最新消息');
+Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('S','網站公告');
+Insert into NEWS_CLASSIFICATION (NEWS_CLASSIFICATION_NO,NEWS_CLASSIFICATION) values ('E','節目異動');
 
 
 
@@ -282,12 +282,12 @@ Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNC
 values (
   'S'||LPAD(to_char(news_S_seq.NEXTVAL), 2, '0')
   ,'S'
-  ,'ETIckeTs�T�ַ|���[�J��k'
-  ,'�|���[�J��k�p�U�G
-    ?�C�H����ȥi�ӽФ@�ӷ|���b���A���|���b���ݸj�w�q�l�l��C
-    ?�q�l�l��ݶi�����ҡA�q�L���ҫ�A�~�i�}�l��ETIckeTs�T�ֺ����ʲ��ʪ��C
-    ?��w���|���b���A�g�q�l�l�����ҧ�����A���L�k�n�D�󴫡A�аȥ��ԷV��w�`�αb���C
-    ?�аȥ������|���A�ȱ��ڤ����p�v���ڡA�T�{�P�N��A�i�����ҧ@�~�C'
+  ,'ETIckeTs娛樂會員加入辦法'
+  ,'會員加入辦法如下：
+    •每人限制僅可申請一個會員帳號，此會員帳號需綁定電子郵件。
+    •電子郵件需進行驗證，通過驗證後，才可開始於ETIckeTs娛樂網站購票購物。
+    •選定之會員帳號，經電子郵件驗證完成後，恕無法要求更換，請務必謹慎選定常用帳號。
+    •請務必詳關會員服務條款及隱私權條款，確認同意後再進行驗證作業。'
   , TO_DATE('1970/1/1','YYYY/MM/DD') 
   ,'A001'
   );
@@ -296,14 +296,14 @@ Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNC
 values (
   'S'||LPAD(to_char(news_S_seq.NEXTVAL), 2, '0')
   ,'S'
-  ,'�ӫH�ȪA�H�c�d�ߤ覡������'
-  ,'����M�����T�a��U�B�z�H����D�A�нЩ�W�Z�ɶ��ӫHETIckeTs�T�֫ȪA�H�cca105.java.002@gmail.com�]�A�{��w����Ȱ��A�ȡ^�C
-    �ӫH���H�󤺮e�A�о��q�]�t�U�C���ءG
-�@ ���H��D���G���D²�z
-�@ ���H�󤺮e�G�]�аȥ���key in�覡���W�^
-�@�@  (1)�ʲ��|���b��(Email)�G
-�@�@  (2)���D�ԭz�G�]���קK�u���Ѥ�����ԭz�θ�T�^
-    �b�����P�¦U�쪺�t�X�AETIckeTs�T�֫ȪA�N�̨ӫH�����D�y�z�A���֨�U�B�z�Φ^�СA���¡I'
+  ,'來信客服信箱查詢方式之說明'
+  ,'為能清楚明確地協助處理信件問題，煩請於上班時間來信ETIckeTs娛樂客服信箱ca105.java.002@gmail.com（適逢國定假日暫停服務）。
+    來信的信件內容，請儘量包含下列項目：
+　 ◆信件主旨：問題簡述
+　 ◆信件內容：（請務必用key in方式附上）
+　　  (1)購票會員帳號(Email)：
+　　  (2)問題詳述：（請避免只提供不完整敘述及資訊）
+    在此先感謝各位的配合，ETIckeTs娛樂客服將依來信之問題描述，儘快協助處理及回覆，謝謝！'
   , TO_DATE('1970/1/1','YYYY/MM/DD') 
   ,'A001'
   );
@@ -312,9 +312,9 @@ Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNC
 values (
   'N'||LPAD(to_char(news_N_seq.NEXTVAL), 2, '0')
   ,'N'
-  ,'�q�l���]�x�Ȥ�k'
-  ,'�q�l���]�x�Ȥ�k�p�U�G
-    ?�������ȭ��H�Υdú�ڡC'
+  ,'電子錢包儲值方法'
+  ,'電子錢包儲值方法如下：
+    •本網站僅限信用卡繳款。'
   , TO_DATE('1970/1/1','YYYY/MM/DD') 
   ,'A001'
   );
@@ -341,21 +341,21 @@ NOCYCLE
 NOCACHE;
 
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'�d�ç�','peter','123456',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'吳永志','peter','123456',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'���p��','kmj','kmj',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'郭小明','kmj','kmj',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'�d�f�A�ۭ�','wilson27561','wilson27561',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'吳口隹石頁','wilson27561','wilson27561',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'���ب�','blue1166nina','blue1166nina',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'戴佩佩','blue1166nina','blue1166nina',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'���p��','shane08302002','shane08302002',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'李小賢','shane08302002','shane08302002',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'��bear','gn59077474','gn59077474',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'黃bear','gn59077474','gn59077474',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'�d�Ѵ�','inoplattw','inoplattw',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'吳老森','inoplattw','inoplattw',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 Insert into ADMINISTRATOR (ADMINISTRATOR_NO,ADMINISTRATOR_NAME,ADMINISTRATOR_ACCOUNT,ADMINISTRATOR_PASSWORD,CREATION_DATE,ADMINISTRATOR_PICTURE,ADMINISTRATOR_STATUS)
-values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'����','lichi750626','lichi750626',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
+values ('A'||LPAD(to_char(administrator_no_seq.NEXTVAL), 3, '0'),'李晨','lichi750626','lichi750626',to_timestamp('1970/1/1  00:00:00','YYYY/MM/DD HH24:MI:SS'),null,'normal');
 
 
 
@@ -373,15 +373,15 @@ NOMAXVALUE
 NOCYCLE
 NOCACHE;
 
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'���i�޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'�ӫ~�޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'���ʺ޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'�|��');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'���ʺ޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'�ʲ����p�d��');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'�`�����D�޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'�޲z���޲z');
-Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'���a�޲z');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'公告管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'商品管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'團購管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'會員');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'活動管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'購票狀況查詢');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'常見問題管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'管理員管理');
+Insert into PERMISSION_LIST (PERMISSION_LIST_NO,PERMISSION) values ('PL'||LPAD(to_char(permission_list_no_seq.NEXTVAL), 2, '0'),'場地管理');
 
 
 
@@ -467,7 +467,7 @@ Insert into PERMISSION (PERMISSION_LIST_NO,ADMINISTRATOR_NO) values ('PL07','A00
 Insert into PERMISSION (PERMISSION_LIST_NO,ADMINISTRATOR_NO) values ('PL08','A008');
 Insert into PERMISSION (PERMISSION_LIST_NO,ADMINISTRATOR_NO) values ('PL09','A008');
 ----------------------------------------------------------------------------------------------------------------
---  </��L����>
+--  </其他結束>
 ----------------------------------------------------------------------------------------------------------------
 
 
@@ -480,10 +480,10 @@ Insert into PERMISSION (PERMISSION_LIST_NO,ADMINISTRATOR_NO) values ('PL09','A00
 
 
 ----------------------------------------------------------------------------------------------------------------
---  <���ʶ}�l>
+--  <活動開始>
 ----------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------
---  �إߪ���
+--  建立表格
 --------------------------------------------------------
 --------------------------------------------------------
 --  for Table EVENT_CLASSIFICATION 
@@ -495,16 +495,16 @@ CREATE TABLE EVENT_CLASSIFICATION(
     CONSTRAINT EVECLASS_PK PRIMARY KEY (EVECLASS_NO)
 );
 
-INSERT INTO EVENT_CLASSIFICATION VALUES ('A', '�t�۷|');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('B', '���ַ|');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('C', '���ּ@');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('D', '���@');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('E', '�R��');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('F', '�i��');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('G', '�ˤl');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('H', '���y');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('I', '�B��');
-INSERT INTO EVENT_CLASSIFICATION VALUES ('J', '��L');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('A', '演唱會');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('B', '音樂會');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('C', '音樂劇');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('D', '戲劇');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('E', '舞蹈');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('F', '展覽');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('G', '親子');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('H', '講座');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('I', '運動');
+INSERT INTO EVENT_CLASSIFICATION VALUES ('J', '其他');
 
 --------------------------------------------------------
 --  for Table TICKET_REFUND_POLICY 
@@ -517,10 +517,10 @@ CREATE TABLE TICKET_REFUND_POLICY(
     CONSTRAINT TICREFPOLICY_PK PRIMARY KEY (TICREFPOLICY_NO)
 );
 
-INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP1','��פ@','�t�X�e10�Ѥ����i�h���A�h��������O�W�����������檺10%�C');
-INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP2','��פG','�ʲ���3�Ѥ��i�h���A�h��������O�W�����������檺5%�C');
-INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP3','��פT','�t�X�e20�Ѥ����i�h���A�h��������O�W�����������檺10%�C');
-INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP4','��ץ|','�t�X��e31�ѥH�e�h������O�W�����������檺10%�C�t�X��e11~30�Ѱh������O�W�����������檺30%�C�t�X��e3~10�Ѱh������O�W�����������檺50%�C�t�X��e2�Ѥ��i�h���C');
+INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP1','方案一','演出前10天內不可退票，退換票手續費上限為票面價格的10%。');
+INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP2','方案二','購票後3天內可退票，退換票手續費上限為票面價格的5%。');
+INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP3','方案三','演出前20天內不可退票，退換票手續費上限為票面價格的10%。');
+INSERT INTO TICKET_REFUND_POLICY VALUES ('TRP4','方案四','演出日前31天以前退票手續費上限為票面價格的10%。演出日前11~30天退票手續費上限為票面價格的30%。演出日前3~10天退票手續費上限為票面價格的50%。演出日前2天不可退票。');
 
 --------------------------------------------------------
 --  for Table VENUE 
@@ -740,10 +740,10 @@ INCREMENT BY 1 START WITH 1 NOMAXVALUE NOCYCLE NOCACHE;
 
 
 ----------------------------------------------------------------------------------------------------------------
---  ��ƿ�J  ***************************************************************************************************
+--  資料輸入  ***************************************************************************************************
 ----------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------
---  �i�ڭ̪��ʲ����լ��ʥD�D: �ªֺt�۷| ***E0001***�j
+--  【我們的購票測試活動主題: 威肯演唱會 ***E0001***】
 -----------------------------------------------------------------------------------
 --------------------------------------------------------
 --  for Table EVENT_TITLE (EVETIT)
@@ -753,7 +753,7 @@ INSERT INTO EVENT_TITLE
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'THE WEEKND ASIA �V LIVE IN TAIPEI�@�ª�2019�x�_�t�۷|', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'THE WEEKND ASIA – LIVE IN TAIPEI　威肯2019台北演唱會', 
 TO_DATE('2019-03-01','YYYY-MM-DD'), TO_DATE('2019-03-02','YYYY-MM-DD'), 2, 'confirmed', 
 TO_DATE('2018-10-01','YYYY-MM-DD'), TO_DATE('2019-03-02','YYYY-MM-DD'), '5');
 --------------------------------------------------------
@@ -761,26 +761,26 @@ TO_DATE('2018-10-01','YYYY-MM-DD'), TO_DATE('2019-03-02','YYYY-MM-DD'), '5');
 --------------------------------------------------------
 INSERT INTO VENUE (VENUE_NO, VENUE_NAME, ADDRESS, LATITUDE, LONGITUDE)
 VALUES
-('V'||LPAD(to_char(VENUE_SEQ.NEXTVAL), 3, '0'), '�x�_�n��C3�s��', '11568�x�_���n��ϸg�T�G��168��', 25.059246, 121.615595);
+('V'||LPAD(to_char(VENUE_SEQ.NEXTVAL), 3, '0'), '台北南港C3廣場', '11568台北市南港區經貿二路168號', 25.059246, 121.615595);
 --------------------------------------------------------
 --  for Table EVENT (EVE)
 --------------------------------------------------------
 INSERT INTO EVENT
 (EVE_NO, EVETIT_NO, VENUE_NO, EVE_SESSION, EVE_SESSIONNAME, EVE_STARTDATE, EVE_ENDDATE, EVE_ONSALEDATE, EVE_OFFSALEDATE, TICLIMIT, EVE_STATUS)
 VALUES
-('E000101', 'E0001', 'V001', '01', '2019/3/1�Ĥ@��', 
+('E000101', 'E0001', 'V001', '01', '2019/3/1第一場', 
 TO_TIMESTAMP('2019-03-01 19:00', 'YYYY-MM-DD HH24:MI'), TO_TIMESTAMP('2019-03-01 23:00', 'YYYY-MM-DD HH24:MI'), 
 TO_TIMESTAMP('2018-10-06 11:00', 'YYYY-MM-DD HH24:MI'), TO_TIMESTAMP('2019-03-01 18:00', 'YYYY-MM-DD HH24:MI'), 4, 'normal');
 
 INSERT INTO EVENT
 (EVE_NO, EVETIT_NO, VENUE_NO, EVE_SESSION, EVE_SESSIONNAME, EVE_STARTDATE, EVE_ENDDATE, EVE_ONSALEDATE, EVE_OFFSALEDATE, TICLIMIT, EVE_STATUS)
 VALUES
-('E000102', 'E0001', 'V001', '02', '2019/3/1�ĤG��', 
+('E000102', 'E0001', 'V001', '02', '2019/3/1第二場', 
 TO_TIMESTAMP('2019-03-02 19:00', 'YYYY-MM-DD HH24:MI'), TO_TIMESTAMP('2019-03-02 23:00', 'YYYY-MM-DD HH24:MI'), 
 TO_TIMESTAMP('2018-10-06 11:00', 'YYYY-MM-DD HH24:MI'), TO_TIMESTAMP('2019-03-02 18:00', 'YYYY-MM-DD HH24:MI'), 4, 'normal');
 
 --------------------------------------------------------
---  E000101 2019/3/1�Ĥ@��
+--  E000101 2019/3/1第一場
 --------------------------------------------------------
 --------------------------------------------------------
 --  for Table TICKET_TYPE (TICTYPE)
@@ -788,40 +788,40 @@ TO_TIMESTAMP('2018-10-06 11:00', 'YYYY-MM-DD HH24:MI'), TO_TIMESTAMP('2019-03-02
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000101A', 'E000101', 'A', '#EE7700', '�n�uA��', 6500);
+('E000101A', 'E000101', 'A', '#EE7700', '搖滾A區', 6500);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000101B', 'E000101', 'B', '#BB5500', '�n�uB��', 5800);
+('E000101B', 'E000101', 'B', '#BB5500', '搖滾B區', 5800);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000101C', 'E000101', 'C', '#A0522D', '�n�uC��', 3800);
+('E000101C', 'E000101', 'C', '#A0522D', '搖滾C區', 3800);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000101D', 'E000101', 'D', '#8B4513', '�n�uD��', 2500);
+('E000101D', 'E000101', 'D', '#8B4513', '搖滾D區', 2500);
 --------------------------------------------------------
 --  for Table SEATING_AREA (TICAREA)
 --------------------------------------------------------
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000101A01', 'E000101', 'E000101A', '01', '#EE7700', '�n�uA��', 800, 800);
+('E000101A01', 'E000101', 'E000101A', '01', '#EE7700', '搖滾A區', 800, 800);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000101B01', 'E000101', 'E000101B', '01', '#BB5500', '�n�uB��', 800, 500);
+('E000101B01', 'E000101', 'E000101B', '01', '#BB5500', '搖滾B區', 800, 500);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000101C01', 'E000101', 'E000101C', '01', '#A0522D', '�n�uC��', 800, 100);
+('E000101C01', 'E000101', 'E000101C', '01', '#A0522D', '搖滾C區', 800, 100);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000101D01', 'E000101', 'E000101D', '01', '#8B4513', '�n�uD��', 500, 500);
+('E000101D01', 'E000101', 'E000101D', '01', '#8B4513', '搖滾D區', 500, 500);
 --------------------------------------------------------
---  E000102 2019/3/2�ĤG��
+--  E000102 2019/3/2第二場
 --------------------------------------------------------
 --------------------------------------------------------
 --  for Table TICKET_TYPE (TICTYPE)
@@ -829,38 +829,38 @@ VALUES
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000102A', 'E000102', 'A', '#EE7700', '�n�uA��', 6500);
+('E000102A', 'E000102', 'A', '#EE7700', '搖滾A區', 6500);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000102B', 'E000102', 'B', '#BB5500', '�n�uB��', 5800);
+('E000102B', 'E000102', 'B', '#BB5500', '搖滾B區', 5800);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000102C', 'E000102', 'C', '#A0522D', '�n�uC��', 3800);
+('E000102C', 'E000102', 'C', '#A0522D', '搖滾C區', 3800);
 INSERT INTO TICKET_TYPE
 (TICTYPE_NO, EVE_NO, TICTYPE_ENAME, TICTYPE_COLOR, TICTYPE_NAME, TICTYPE_PRICE)
 VALUES
-('E000102D', 'E000102', 'D', '#8B4513', '�n�uD��', 2500);
+('E000102D', 'E000102', 'D', '#8B4513', '搖滾D區', 2500);
 --------------------------------------------------------
 --  for Table SEATING_AREA (TICAREA)
 --------------------------------------------------------
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000102A01', 'E000102', 'E000101A', '01', '#EE7700', '�n�uA��', 800, 800);
+('E000102A01', 'E000102', 'E000101A', '01', '#EE7700', '搖滾A區', 800, 800);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000102B01', 'E000102', 'E000101B', '01', '#BB5500', '�n�uB��', 800, 500);
+('E000102B01', 'E000102', 'E000101B', '01', '#BB5500', '搖滾B區', 800, 500);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000102C01', 'E000102', 'E000101C', '01', '#A0522D', '�n�uC��', 800, 50);
+('E000102C01', 'E000102', 'E000101C', '01', '#A0522D', '搖滾C區', 800, 50);
 INSERT INTO SEATING_AREA
 (TICAREA_NO, EVE_NO, TICTYPE_NO, TICAREA_ENAME, TICAREA_COLOR, TICAREA_NAME, TICTOTALNUMBER, TICBOOKEDNUMBER)
 VALUES
-('E000102D01', 'E000102', 'E000101D', '01', '#8B4513', '�n�uD��', 500, 500);
+('E000102D01', 'E000102', 'E000101D', '01', '#8B4513', '搖滾D區', 500, 500);
 
 --------------------------------------------------------
 --  for Table TICKET_ORDER
@@ -895,39 +895,39 @@ VALUES ('R_20181226_'||LPAD(to_char(RESALE_ORD_SEQ.NEXTVAL), 6, '0'),'T_20181225
 
 
 -----------------------------------------------------------------------------------
---  �i��L���˹����ʥD�D�j
+--  【其他的裝飾活動主題】
 -----------------------------------------------------------------------------------
 --------------------------------------------------------
---  ���q�ˮT�֥��ͥ@�ɨ��j�t�۷|-���D���u������ ***E0002***
+--  蕭敬騰娛樂先生世界巡迴演唱會-雅聞倍優高雄站 ***E0002***
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '���q�ˮT�֥��ͥ@�ɨ��j�t�۷|-���D���u������', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '蕭敬騰娛樂先生世界巡迴演唱會-雅聞倍優高雄站', 
 TO_DATE('2019-01-19','YYYY-MM-DD'), TO_DATE('2019-01-20','YYYY-MM-DD'), 2, 'confirmed', 
 TO_DATE('2018-08-01','YYYY-MM-DD'), TO_DATE('2019-01-20','YYYY-MM-DD'), '5');
 --------------------------------------------------------
---  �����2019�u�H�͵L�����q�v�L����j�̲צ^��x���w�ڴβy�� ***E0003***
+--  五月天2019「人生無限公司」無限放大最終回到台中洲際棒球場 ***E0003***
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '�����2019�u�H�͵L�����q�v�L����j�̲צ^��x���w�ڴβy��', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '五月天2019「人生無限公司」無限放大最終回到台中洲際棒球場', 
 TO_DATE('2018-12-22','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), 10, 'confirmed', 
 TO_DATE('2018-07-01','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), '5');
 --------------------------------------------------------
---  �Ǥ� �g��@�ɨ��j�t�۷|�V2019������ ***E0004***
+--  學友 經典世界巡迴演唱會–2019高雄站 ***E0004***
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '�Ǥ� �g��@�ɨ��j�t�۷|�V2019������', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '學友 經典世界巡迴演唱會–2019高雄站', 
 TO_DATE('2019-01-04','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), 3, 'confirmed', 
 TO_DATE('2018-10-01','YYYY-MM-DD'), TO_DATE('2019-01-06','YYYY-MM-DD'), '5');
 --------------------------------------------------------
@@ -942,14 +942,14 @@ VALUES
 TO_DATE('2019-03-31','YYYY-MM-DD'), TO_DATE('2019-03-31','YYYY-MM-DD'), 1, 'confirmed', 
 TO_DATE('2018-12-12','YYYY-MM-DD'), TO_DATE('2019-03-31','YYYY-MM-DD'), '5');
 --------------------------------------------------------
---  �mSince 5566�n�x�_�p���J�t�۷| - �@�q�R�P�ڭ̪��G�� ***E0006*** 
+--  《Since 5566》台北小巨蛋演唱會 - 一段愛與我們的故事 ***E0006*** 
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '�mSince 5566�n�x�_�p���J�t�۷| - �@�q�R�P�ڭ̪��G��', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', '《Since 5566》台北小巨蛋演唱會 - 一段愛與我們的故事', 
 TO_DATE('2019-02-23','YYYY-MM-DD'), TO_DATE('2019-02-23','YYYY-MM-DD'), 1, 'confirmed', 
 TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-02-23','YYYY-MM-DD'), '5');
 --------------------------------------------------------
@@ -964,14 +964,14 @@ VALUES
 TO_DATE('2019-03-01','YYYY-MM-DD'), TO_DATE('2019-03-01','YYYY-MM-DD'), 1, 'confirmed', 
 TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-03-01','YYYY-MM-DD'), '5');
 --------------------------------------------------------
---  Mr.Children Tour 2018-19 ���O�P�I�l Live in Taiwan ***E0008*** 
+--  Mr.Children Tour 2018-19 重力與呼吸 Live in Taiwan ***E0008*** 
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'Mr.Children Tour 2018-19 ���O�P�I�l Live in Taiwan', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'Mr.Children Tour 2018-19 重力與呼吸 Live in Taiwan', 
 TO_DATE('2019-02-01','YYYY-MM-DD'), TO_DATE('2019-02-02','YYYY-MM-DD'), 1, 'confirmed', 
 TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-02-02','YYYY-MM-DD'), '5');
 
@@ -979,7 +979,7 @@ TO_DATE('2018-12-01','YYYY-MM-DD'), TO_DATE('2019-02-02','YYYY-MM-DD'), '5');
 
 
 -----------------------------------------------------------------------------------
---  �i�P���ʥD�D������ơj
+--  【與活動主題相關資料】
 -----------------------------------------------------------------------------------
 --------------------------------------------------------
 -- FOR TABLE ADVERTISEMENT
@@ -999,7 +999,7 @@ INSERT INTO FAVORITE_EVENT VALUES ('M000001', 'E0004');
 
 
 ----------------------------------------------------------------------------------------------------------------
---  </���ʵ���>
+--  </活動結束>
 ----------------------------------------------------------------------------------------------------------------
 
 
@@ -1016,10 +1016,10 @@ INSERT INTO FAVORITE_EVENT VALUES ('M000001', 'E0004');
 
 
 ----------------------------------------------------------------------------------------------------------------
---  <�ӫ~���ʶ}�l>
+--  <商品團購開始>
 ----------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------
---  �إߪ���
+--  建立表格
 --------------------------------------------------------
 
 
@@ -1059,7 +1059,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'[�����LIFE] �Ĥ����� �����k�_ T (��/�ը��)'
+    ,'[五月天LIFE] 第五分隊 五度歸巢 T (黑/白兩色)'
     ,750
     ,NULL
     ,NULL
@@ -1067,7 +1067,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,600
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_TIMESTAMP('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_TIMESTAMP('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1078,7 +1078,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'[�����LIFE] ��Ӫ��ڭ� �Ĥ������k����T (FS.FM)'
+    ,'[五月天LIFE] 原來的我們 第五分隊歸隊粉T (FS.FM)'
     ,800
     ,NULL
     ,NULL
@@ -1086,7 +1086,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,650
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1097,7 +1097,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'����� / [LIFE] �·t�M�h ���[���� ��T'
+    ,'五月天 / [LIFE] 黑暗騎士 美加分隊 黑T'
     ,1480
     ,NULL
     ,NULL
@@ -1105,7 +1105,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,1220
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1116,7 +1116,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'�����Mayday / [LIFE�H�͵L��] ����LED�å��� (��)'
+    ,'五月天Mayday / [LIFE人生無限] 互動LED螢光棒 (白)'
     ,149
     ,NULL
     ,NULL
@@ -1124,7 +1124,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,121
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1135,7 +1135,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'����� / [LIFE] �·t�M�h �Ĥ��������J'
+    ,'五月天 / [LIFE] 黑暗騎士 第五分隊公仔'
     ,3999
     ,NULL
     ,NULL
@@ -1143,7 +1143,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,3999
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1154,7 +1154,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0003'
-    ,'�����/ [LIFE] �Ĥ����� ������N�K�Ȳ�'
+    ,'五月天/ [LIFE] 第五分隊 行李任意貼紙組'
     ,150
     ,NULL
     ,NULL
@@ -1162,7 +1162,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1173,7 +1173,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� LED��������'
+    ,'娛樂先生 LED應援手環'
     ,150
     ,NULL
     ,NULL
@@ -1181,7 +1181,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1192,7 +1192,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� �ѴU/�����'
+    ,'娛樂先生 老帽/紅色款'
     ,850
     ,NULL
     ,NULL
@@ -1200,7 +1200,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,750
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1211,7 +1211,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� �B�ʤ�y'
+    ,'娛樂先生 運動毛巾'
     ,500
     ,NULL
     ,NULL
@@ -1219,7 +1219,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,420
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1230,7 +1230,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� ��y����'
+    ,'娛樂先生 潮流手環'
     ,300
     ,NULL
     ,NULL
@@ -1238,7 +1238,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,250
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1249,7 +1249,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� 3D�f�n'
+    ,'娛樂先生 3D口罩'
     ,150
     ,NULL
     ,NULL
@@ -1257,7 +1257,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1268,7 +1268,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0002'
-    ,'�T�֥��� �ѴU/�զ��'
+    ,'娛樂先生 老帽/白色款'
     ,850
     ,NULL
     ,NULL
@@ -1276,7 +1276,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,750
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1287,7 +1287,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m���O�� Notebook�n�i�jA�j'
+    ,'張學友 _ 學友•經典 Classic Tour《筆記本 Notebook》【大A】'
     ,200
     ,NULL
     ,NULL
@@ -1295,7 +1295,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,180
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1306,7 +1306,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m�O�Ų~ vacuum bottle '
+    ,'張學友 _ 學友•經典 Classic Tour《保溫瓶 vacuum bottle '
     ,600
     ,NULL
     ,NULL
@@ -1314,7 +1314,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,500
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1325,7 +1325,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m�βy�UBaseball Cap�n'
+    ,'張學友 _ 學友•經典 Classic Tour《棒球帽Baseball Cap》'
     ,400
     ,NULL
     ,NULL
@@ -1333,7 +1333,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,350
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1344,7 +1344,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m���S�] tote bag�n�� (white)'
+    ,'張學友 _ 學友•經典 Classic Tour《托特包 tote bag》白 (white)'
     ,400
     ,NULL
     ,NULL
@@ -1352,7 +1352,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,350
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1363,7 +1363,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m������y Towel�n�i�� orange�j'
+    ,'張學友 _ 學友•經典 Classic Tour《應援毛巾 Towel》【橘 orange】'
     ,300
     ,NULL
     ,NULL
@@ -1371,7 +1371,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,250
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1382,7 +1382,7 @@ INSERT INTO GOODS VALUES
 (
     'P'||LPAD(TO_CHAR(GOODS_SEQ.NEXTVAL),7,'0')
     ,'E0004'
-    ,'�i�Ǥ� _ �Ǥ�?�g�� Classic Tour�m���S���T-shirt ��(grey)�n'
+    ,'張學友 _ 學友•經典 Classic Tour《長袖刷毛T-shirt 灰(grey)》'
     ,1300
     ,NULL
     ,NULL
@@ -1390,7 +1390,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,1100
     ,0
-    ,'�w�W�['
+    ,'已上架'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -1429,8 +1429,8 @@ INSERT INTO GOODS_FAQ VALUES
     ,'P0000001'
     ,'M000001'
     ,'A001'
-    ,'����ɭԨ�f'
-    ,'����'
+    ,'什麼時候到貨'
+    ,'今天'
     ,TO_TIMESTAMP('2018-12-10 13:14:15','YYYY-MM-DD HH24:MI:SS')
     ,TO_TIMESTAMP('2018-12-11 12:34:56','YYYY-MM-DD HH24:MI:SS')
 );
@@ -1440,8 +1440,8 @@ INSERT INTO GOODS_FAQ VALUES
     ,'P0000002'
     ,'M000002'
     ,'A001'
-    ,'����ɭԨ�f'
-    ,'����'
+    ,'什麼時候到貨'
+    ,'明天'
     ,TO_TIMESTAMP('2018-12-10 13:14:15','YYYY-MM-DD HH24:MI:SS')
     ,TO_TIMESTAMP('2018-12-11 12:34:56','YYYY-MM-DD HH24:MI:SS')
 );
@@ -1451,13 +1451,13 @@ INSERT INTO GOODS_FAQ VALUES
     ,'P0000003'
     ,'M000003'
     ,'A001'
-    ,'����ɭԨ�f'
-    ,'���'
+    ,'什麼時候到貨'
+    ,'後天'
     ,TO_TIMESTAMP('2018-12-10 13:14:15','YYYY-MM-DD HH24:MI:SS')
     ,TO_TIMESTAMP('2018-12-11 12:34:56','YYYY-MM-DD HH24:MI:SS')
 );
 
---�}�ά���
+--開團紀錄
 ---------------------------------
 CREATE TABLE GROUP_OPEN(
     GROUP_NO VARCHAR2(5) NOT NULL,
@@ -1482,7 +1482,7 @@ CREATE TABLE GROUP_OPEN(
     FOREIGN KEY(GOODS_NO) REFERENCES GOODS (GOODS_NO)
 );
 
---�}�ά�����C
+--開團紀錄佇列
 -------------------------------
 CREATE SEQUENCE GROUP_NO_SEQ
     INCREMENT BY 1
@@ -1492,13 +1492,13 @@ CREATE SEQUENCE GROUP_NO_SEQ
     NOCACHE;
 
 
---�إ߶}�ά��������
+--建立開團紀錄假資料
 ----------------------------------
 INSERT INTO GROUP_OPEN VALUES (
    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
    'M000001',
    'P0000007',
-   '�ѿ��T�֥��� �W����������',
+   '老蕭娛樂先生 超炫應援手環',
    '10',
    NULL,
    NULL,
@@ -1507,7 +1507,7 @@ INSERT INTO GROUP_OPEN VALUES (
    NULL,
    NULL,
    'process1',
-   '�x�_���H�q�ϩ����F�����q420��',
+   '台北市信義區忠孝東路五段420號',
    25.0407339,
    121.575305,
     TO_DATE('2019-01-12 17:00:20','YYYY-MM-DD hh24:mi:ss'),
@@ -1517,7 +1517,7 @@ INSERT INTO GROUP_OPEN VALUES(
     'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
     'M000007',
     'P0000008',
-    '�H��@�� ����ѿ��T�֥��ͦѴU�����',
+    '人手一頂 支持老蕭娛樂先生老帽紅色款',
     10,
     NULL,
     NULL,
@@ -1526,7 +1526,7 @@ INSERT INTO GROUP_OPEN VALUES(
     NULL,
     NULL,
     'process1',
-    '��饫���ϦP�w��379��',
+    '桃園市桃園區同安街379號',
     25.0177684,
     121.2997996,
     TO_DATE('2018-01-22 19:00:00','YYYY-MM-DD hh24:mi:ss'),
@@ -1537,7 +1537,7 @@ INSERT INTO GROUP_OPEN VALUES(
     'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
     'M000009',
     'P0000011',
-    '�P�ѿ��P�ڶ¦�f�n',
+    '與老蕭同款黑色口罩',
     10,
     NULL,
     NULL,
@@ -1546,14 +1546,14 @@ INSERT INTO GROUP_OPEN VALUES(
     NULL,
     NULL,
     'fail2',
-    '��饫���Ϥ�����420��',
+    '桃園市桃園區中正路420號',
     25.0003198,
     121.2997996,
     TO_DATE('2018-01-01 15:00:00','YYYY-MM-DD hh24:mi:ss'),
     2000
 );
 
---���ΰQ�װ�
+--揪團討論區
 ---------------
 CREATE TABLE FORUM(
    FORUM_NO VARCHAR(9) NOT NULL
@@ -1576,16 +1576,16 @@ CREATE SEQUENCE FORUM_SEQ
     NOCACHE;
 
 
-INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0001','M000004','�n�[�S�ΤF�Ʊ榨��',TO_TIMESTAMP('2018-12-08 152222','YYYY-MM-DD hh24miss'));
-INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0001','M000005','�ڤ��������I',TO_TIMESTAMP('2018-12-08 191322','YYYY-MM-DD hh24miss'));
-INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0002','M000008','���ݳf�i�H�֤@�I��', TO_TIMESTAMP('2018-01-01 092022','YYYY-MM-DD hh24miss'));
+INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0001','M000004','好久沒團了希望成團',TO_TIMESTAMP('2018-12-08 152222','YYYY-MM-DD hh24miss'));
+INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0001','M000005','我支持李毓芬！',TO_TIMESTAMP('2018-12-08 191322','YYYY-MM-DD hh24miss'));
+INSERT INTO FORUM VALUES('F'||LPAD(to_char(FORUM_SEQ.NEXTVAL),4,'0'), 'G0002','M000008','期待貨可以快一點到', TO_TIMESTAMP('2018-01-01 092022','YYYY-MM-DD hh24miss'));
 
 
 
 
 
     
---��ά���
+--跟團紀錄
 ---------------------------
 CREATE TABLE  GROUP_MEMBER(
      MEMBER_NO VARCHAR2(7) NOT NULL
@@ -1647,7 +1647,7 @@ INSERT INTO GROUP_MEMBER VALUES(
     4,
     'CANCEL3',
     'quit',
-    '����ӶQ�F',
+    '價格太貴了',
     0932934856,
     'CREDITCARD'
 );
@@ -1687,7 +1687,7 @@ INSERT INTO GROUP_MEMBER VALUES(
 );
 
 --------------------------------------------------------
---  for Table ORDER_HISTORY �q�����
+--  for Table ORDER_HISTORY 訂單紀錄
 --------------------------------------------------------
 CREATE TABLE ORDER_HISTORY (
   ORDER_NO          VARCHAR2(14)    NOT NULL PRIMARY KEY
@@ -1713,14 +1713,14 @@ NOCYCLE
 NOCACHE;
 
 Insert into ORDER_HISTORY (ORDER_NO,MEMBER_NO,ORDER_PRICE,PAY_METHODS,SHIPPING_METHODS,ORDER_DATE,ORDER_ETD,PICKUP_DATE,RECEIVER_ADD,RECEIVER_NAME,RECEIVER_TEL,ORDER_STATUS) 
-    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000001',45000,'EWALLET','STOREPICKUP',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'320��饫���c�Ϻּw�@��177��60��2��','Peter','0912345678','COMPLETE4');
+    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000001',45000,'EWALLET','STOREPICKUP',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'320桃園市中壢區福德一路177巷60弄2號','Peter','0912345678','COMPLETE4');
 Insert into ORDER_HISTORY (ORDER_NO,MEMBER_NO,ORDER_PRICE,PAY_METHODS,SHIPPING_METHODS,ORDER_DATE,ORDER_ETD,PICKUP_DATE,RECEIVER_ADD,RECEIVER_NAME,RECEIVER_TEL,ORDER_STATUS) 
-    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000002',99990,'CREDITCARD','HOMEDELIVERY',CURRENT_TIMESTAMP,'','','320��饫���c�Ϥ�����100��','David','0913345678','CANCEL5');
+    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000002',99990,'CREDITCARD','HOMEDELIVERY',CURRENT_TIMESTAMP,'','','320桃園市中壢區中央路100號','David','0913345678','CANCEL5');
 Insert into ORDER_HISTORY (ORDER_NO,MEMBER_NO,ORDER_PRICE,PAY_METHODS,SHIPPING_METHODS,ORDER_DATE,ORDER_ETD,PICKUP_DATE,RECEIVER_ADD,RECEIVER_NAME,RECEIVER_TEL,ORDER_STATUS)
-    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000003',4000,'CREDITCARD','STOREPICKUP',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'320��饫���c�Ϥ�����102��','Sara','0914345678','COMPLETE4');
+    values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_HISTORY_seq.NEXTVAL), 5, '0'),'M000003',4000,'CREDITCARD','STOREPICKUP',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'320桃園市中壢區中央路102號','Sara','0914345678','COMPLETE4');
 
 --------------------------------------------------------
---  for Table ORDER_DETAIL �q�����
+--  for Table ORDER_DETAIL 訂單明細
 --------------------------------------------------------
 CREATE TABLE ORDER_DETAIL (
   ORDER_NO      VARCHAR2(14)    NOT NULL 
@@ -1747,7 +1747,7 @@ Insert into ORDER_DETAIL (ORDER_NO,GOODS_NO,GOODS_BONUS,GOODS_PC)
     values ('O'||to_char(sysdate,'yyyymmdd')||LPAD(to_char(ORDER_DETAIL_seq.NEXTVAL), 5, '0'),'P0000003',4000,1);
 
 --------------------------------------------------------
---  for Table FAVORITE_GOODS �̷R�ӫ~
+--  for Table FAVORITE_GOODS 最愛商品
 --------------------------------------------------------
 CREATE TABLE FAVORITE_GOODS (   
   MEMBER_NO     VARCHAR2(7) NOT NULL 
@@ -1762,7 +1762,7 @@ Insert into FAVORITE_GOODS (MEMBER_NO,GOODS_NO) values ('M000002','P0000002');
 Insert into FAVORITE_GOODS (MEMBER_NO,GOODS_NO) values ('M000003','P0000003');
 
 ----------------------------------------------------------------------------------------------------------------
---  </�ӫ~���ʵ���>
+--  </商品團購結束>
 ----------------------------------------------------------------------------------------------------------------
 
 commit;
