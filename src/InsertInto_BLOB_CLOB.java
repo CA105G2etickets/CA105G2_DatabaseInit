@@ -10,7 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class InsertInto_Event_BLOB_CLOB {
+public class InsertInto_BLOB_CLOB {
 	
 	private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
 	private static final String USER = "CA105G2";
