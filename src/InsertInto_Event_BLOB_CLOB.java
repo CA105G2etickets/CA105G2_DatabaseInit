@@ -33,6 +33,8 @@ public class InsertInto_Event_BLOB_CLOB {
 		folderList.add(new FolderInfo("BLOB_GROUP_OPEN","GROUP_NO",5));
 		folderList.add(new FolderInfo("CLOB_GROUP_OPEN","GROUP_NO",5));
 		
+		folderList.add(new FolderInfo("BLOB_ADMINISTRATOR","ADMINISTRATOR_NO",4));
+		
 		for(int i = 0; i < folderList.size(); i++) {
 			
 			String folderName = folderList.get(i).folderName;
