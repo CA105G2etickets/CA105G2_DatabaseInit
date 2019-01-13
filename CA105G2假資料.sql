@@ -4469,14 +4469,14 @@ VALUES
 ('ES'||LPAD(to_char(TICAREA_SEQ.NEXTVAL), 8, '0'), 'EV00023', 'ET000170', '#ff5656', '6樓包廂E7區', 1000, 1000);
 
 --------------------------------------------------------
---  TROYE SIVAN THE BLOOM TOUR 2019 LIVE IN TAIPEI 特洛伊2019台北演唱會 ***E0010***  ****************************************************************************************************E0010***
+--  TROYE SIVAN THE BLOOM TOUR 2019 LIVE IN TAIPEI ***E0010***  ****************************************************************************************************E0010***
 --------------------------------------------------------
 INSERT INTO EVENT_TITLE
 (EVETIT_NO, EVECLASS_NO, TICREFPOLICY_NO, EVETIT_NAME, 
 EVETIT_STARTDATE, EVETIT_ENDDATE, EVETIT_SESSIONS, EVETIT_STATUS, 
 LAUNCHDATE, OFFDATE, PROMOTIONRANKING)
 VALUES
-('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'TROYE SIVAN THE BLOOM TOUR 2019 LIVE IN TAIPEI 特洛伊2019台北演唱會', 
+('E'||LPAD(to_char(EVETIT_SEQ.NEXTVAL), 4, '0'), 'A',  'TRP2', 'TROYE SIVAN THE BLOOM TOUR 2019 LIVE IN TAIPEI', 
 TO_DATE('2019-04-29','YYYY-MM-DD'), TO_DATE('2019-04-29','YYYY-MM-DD'), 1, 'confirmed', 
 TO_DATE('2019-01-05','YYYY-MM-DD'), TO_DATE('2019-04-30','YYYY-MM-DD'), '4');
 --------------------------------------------------------
