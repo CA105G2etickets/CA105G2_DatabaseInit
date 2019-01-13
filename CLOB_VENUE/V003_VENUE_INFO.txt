@@ -1,0 +1,42 @@
+﻿<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#ff6600"><strong>※ 搭乘捷運：</strong></span></span></span></span></p>
+
+<p style="text-align:left"><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif">搭乘板南線（藍色線）往「南港展覽館」方向至「市政府站」，由3號出口出站，沿忠孝東路五段直行右轉松仁路，即抵達會場（步行約5分鐘）。　</span></span></span></p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#ff6600"><strong>※ 搭乘公車：</strong></span></span></span></span></p>
+
+<div style="-webkit-text-stroke-width:0px; text-align:-webkit-center; text-indent:0px">
+<table align="left" cellspacing="0" class="auto-style2" style="border-collapse:collapse; border-style:solid; border-width:1px; border:undefined; height:133px; width:60%">
+	<tbody>
+		<tr>
+			<td><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333"><strong>公車站牌</strong></span></span></span></span></span></span></td>
+			<td><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333"><strong>公車路線</strong></span></span></span></span></span></span></td>
+		</tr>
+		<tr>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">市政府站</span></span></span></span></span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">212直、261、263、270、270區、611、32、651、232、藍15、藍10</span></span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">興雅國中</span></span></span></span></span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">46、277、281、611、621、284、902、20小</span></span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">消防局</span></span></span></span></span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:12px"><span style="color:#333333"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="font-size:12px"><span style="font-family:Verdana,Arial,Helvetica,sans-serif"><span style="color:#333333">270、281、611、902、284、901、32、藍15、藍10</span></span></span></span></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>

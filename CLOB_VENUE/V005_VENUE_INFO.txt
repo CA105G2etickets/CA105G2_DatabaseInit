@@ -1,0 +1,68 @@
+﻿<table id="table14" style="-webkit-text-stroke-width:0px; background-color:#ffffff; border:undefined; color:#000000">
+	<tbody>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;捷運</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">1. 搭乘高雄捷運紅線至R17世運站&rarr;於1號出口出車站直行右轉走世運大道約800公尺&rarr;右側即本場館入口。<br />
+			2. 由高鐵左營站、高雄火車站及小港機場均可選擇搭乘高雄捷運紅線。<br />
+			3. 橘線乘客請於R10/O5美麗島站轉搭紅線。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;公車</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">1. 搭紅53捷運接駁公車至世運主場館站下車即可。&nbsp;<br />
+			2. 搭29、38北、218、245號公車至國軍左營醫院站下車往南直走軍校路&rarr;左轉走世運大道約200公尺即可。&nbsp;<br />
+			3. 搭6、219、301號及中華幹線公車至R17世運站直行右轉走世運大道約800公尺&rarr;右側即可見到世運主館入口或轉乘紅53至世運主場館站下車即可。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;高雄客運</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">搭221線（鳳山-彌陀）至國軍左營醫院站下車往南直走軍校路&rarr;左轉走世運大道約200公尺即可。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;從高鐵左營站出發</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">搭301號公車至R17世運站直行右轉走世運大道約800公尺&rarr;右側即可見到世運主場館入口或轉乘紅53至世運主場館站下車即可。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;從高雄火車站出發</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">搭乘218、245號公車至國軍左營醫院站下車往南直走軍校路&rarr;左轉走世運大道約200公尺即可。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;從機場出發</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">無直達公車路線，請搭乘高雄捷運。</span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><img alt="" src="http://www.nssac.gov.tw/newsite/images/line_02.gif" /></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848"><strong><span style="color:#1860af"><img alt="*" src="http://www.nssac.gov.tw/newsite/images/icon_02.gif" />&nbsp;高速公路國道下交流道</span></strong></span></span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#ffffff"><span style="font-size:12.8px"><span style="font-family:Arial"><span style="color:#484848">行駛國道一號下楠梓交流道，延楠陽路上南陽高架橋後，行駛加昌路，轉左楠路，再右轉世運大道即可抵達 。</span></span></span></td>
+		</tr>
+	</tbody>
+</table>

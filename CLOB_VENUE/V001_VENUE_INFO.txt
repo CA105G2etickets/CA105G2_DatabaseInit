@@ -1,42 +1,21 @@
-﻿<ol>
-	<li>
-	<h3><strong>利用 中山高(北一高)北上及南下之行車路線</strong></h3>
+﻿<p><strong>搭乘公車至【南港軟體園區北站】</strong></p>
 
-	<ul>
-		<li>利用國道一號北上或南下的車輛(含大型車輛)，請於16.8公里處「內湖交流道」下高速公路，接「成功路」，直行過「成功橋」， 左轉接「重陽路」至南港展館(可利用原路線接國道一號南下或北上)。</li>
-		<li>或於11.5公里處「汐止系統交流道」離開國道一號，再接國道三號繼續往南行駛，至12.7公里處「新台五路交流道」下高速公路，右轉接 「新台五路」，再左轉「大同路」，直行接南港路至南港展館(所有車輛可利用原路接國道一號南下或北上)。</li>
-		<li>利用國道一號北上至南港展館的所有車輛亦可前行至15.2公里處「東湖交流道」下高速公路，右轉接「康寧路」，過「南湖大橋」後，接「三重路」、左轉「經貿二路」至南港展館(自南港展館出發，可利用原路接國道一號南下，惟無法北上)。<br />
-		&nbsp;</li>
-	</ul>
-	</li>
-	<li>
-	<h3><strong>利用國?道三號北二高北上及南下之行車路線(含國道五號北宜高速公路)</strong></h3>
+<p>步行到115臺北市南港區經貿二路</p>
 
-	<ul>
-		<li>利用國道三號北上或南下的車輛(含大型車輛)，請於12.7公里處「新台五路交流道」下高速公路，接「新台五路」、左轉「大同 路」、直行接「南港路」至南港展館(所有車輛可利用原路接國道三號南下或北上)。</li>
-		<li>除貨櫃車及聯結車外，其他車輛可於15.1公里處「南港交流道」下高速公路，接「南港聯絡道」後靠內側車道行駛，直行約1.5 公里至「南港經貿園區」出口下聯絡道，左轉接經貿一路至南港展館(貨櫃車及聯結車除外，其他車輛可利用原路接國道三號南下，惟無法北上)。</li>
-		<li>利用國道五號往台北的小型車輛，行至「南港系統交流道」匯接國道三號，靠右側車道行駛約1公里，於15.1公里處「南港交流道」接「南 港聯絡道」至南港展館(小型車輛可利用原路上國道五號 )。<br />
-		&nbsp;</li>
-	</ul>
-	</li>
-	<li>
-	<h2><strong>利用台北市區道路之行車路線</strong></h2>
+<p>21, 21直, 203, 281, 620, 629</p>
 
-	<ul>
-		<li><span style="font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft YaHei', 微軟雅黑體, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0.8px; line-height: 24px;">台北南港展覽館1館</span>東側來車:利用大同路、接南港路，至經貿二路口右轉南港展館。</li>
-		<li><span style="font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft YaHei', 微軟雅黑體, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0.8px; line-height: 24px;">台北南港展覽館1館</span>西側來車:
-		<ul class="circle">
-			<li>利用忠孝東路，行至研究院路口左轉，穿越縱貫鐵路後，直行接經貿二路至南港展館;</li>
-			<li>利用環東大道，至「南港經貿園區、汐止」出口下環東大道，接經貿一路至南港展館。</li>
-		</ul>
-		</li>
-		<li><span style="font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft YaHei', 微軟雅黑體, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0.8px; line-height: 24px;">台北南港展覽館1館</span>南側來車:利用研究院路(或忠孝東路左轉研究院路)直行，穿越縱貫鐵路後直行接經貿二路至南港展館。</li>
-		<li><span style="font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft YaHei', 微軟雅黑體, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0.8px; line-height: 24px;">台北南港展覽館1館</span>北側來車:
-		<ul class="circle">
-			<li>利用康寧路，過「南湖大橋」後接「三重路」、左轉「經貿二路」至南港展館。</li>
-			<li>利用成功路，過「成功橋」後直行，至「重陽路」左轉，往東直行至南港展館。</li>
-		</ul>
-		</li>
-	</ul>
-	</li>
-</ol>
+<p>&nbsp;</p>
+
+<p><strong>搭乘公車至【捷運南港軟體園區站】</strong></p>
+
+<p>步行到115臺北市南港區經貿二路</p>
+
+<p>市民小巴M15, 忠孝新幹線, 棕19, 藍51</p>
+
+<p>&nbsp;</p>
+
+<p><strong>搭乘捷運【板南線】至【南港展覽館站】或【南港軟體園區站】</strong></p>
+
+<p>2 號出口步行到臺北市南港區經貿二路約 4 分鐘 350 公尺</p>
+
+<p>&nbsp;</p>

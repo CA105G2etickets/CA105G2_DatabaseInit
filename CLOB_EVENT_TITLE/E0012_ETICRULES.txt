@@ -1,0 +1,2 @@
+﻿<!-- start: 取票提醒 -->
+<div class="tab-pane" id="get-note"><ol><li><span>取票方式為【ibon取票】<strong>，取票時每筆將酌收$30手續費</strong>，於7-11超商門市付款時以現金方式支付。</span></li><li><span>ibon取票流程說明：</span><br /><span>&nbsp; (1)請於ibon機台點選：票券中心&rarr;售票系統&rarr;取票&rarr;拓元售票系統。</span><br /><span>&nbsp; (2)請依照系統畫面指示，分別輸入【取票序號、取票號碼】，並列印取票繳費單。（取票序號及取票號碼，可於【訂單查詢】中查看）</span><br /><span>&nbsp; (3)請持取票繳費單至該門市櫃台付款及領取正式ibon票券。</span></li><li><span>付款完成之訂單，逾期未取票者視同售出，恕不接受退票或退費。</span></li><li><span>現場票務服務處恕無法提供取票服務，請於開演前自行至7-11超商完成取票。</span></li></ol></div>                        <!-- end: 網站購票提醒 -->
