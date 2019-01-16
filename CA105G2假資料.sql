@@ -5505,6 +5505,8 @@ CREATE SEQUENCE GROUP_NO_SEQ
 
 --建立開團紀錄假資料
 ----------------------------------
+--建立開團紀錄假資料
+----------------------------------
 INSERT INTO GROUP_OPEN VALUES (
    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
    'M000001',
@@ -5514,15 +5516,15 @@ INSERT INTO GROUP_OPEN VALUES (
    NULL,
    NULL,
    TO_DATE('2018-12-04 19:00:22','YYYY-MM-DD hh24:mi:ss'),
-   TO_DATE('2019-01-11 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+   TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
    NULL,
    NULL,
    'process1',
    '台北市信義區忠孝東路五段420號',
    25.0407339,
    121.575305,
-    TO_DATE('2019-01-12 17:00:20','YYYY-MM-DD hh24:mi:ss'),
-    210
+    TO_DATE('2019-01-30 17:00:20','YYYY-MM-DD hh24:mi:ss'),
+    135
 );
 INSERT INTO GROUP_OPEN VALUES(
     'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
@@ -5533,15 +5535,15 @@ INSERT INTO GROUP_OPEN VALUES(
     NULL,
     NULL,
     TO_DATE('2018-12-29 20:00:00','YYYY-MM-DD hh24:mi:ss'),
-    TO_DATE('2018-01-20 20:20:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
     NULL,
     NULL,
     'process1',
     '桃園市桃園區同安街379號',
-    25.0177684,
-    121.2997996,
+    25.0177636,
+    121.3019883,
     TO_DATE('2018-01-22 19:00:00','YYYY-MM-DD hh24:mi:ss'),
-    190
+    750
 );
 
 INSERT INTO GROUP_OPEN VALUES(
@@ -5553,15 +5555,151 @@ INSERT INTO GROUP_OPEN VALUES(
     NULL,
     NULL,
     TO_DATE('2018-12-7 13:00:00','YYYY-MM-DD hh24:mi:ss'),
-    TO_DATE('2018-12-10 18:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '桃園市桃園區中正路420號',
+    25.000315,
+    121.307707,
+    TO_DATE('2019-01-30 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    135
+);
+
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000020',
+    'P0000015',
+    '張學友經典《棒球帽Baseball Cap》',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-30 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '台北市大安區信義路四段2號',
+    25.0447268,
+    121.5249203,
+    TO_DATE('2019-01-30 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    350
+);
+
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000018',
+    'P0000016',
+    '張學友 _ 學友•經典 Classic Tour《托特包 tote bag》白 (white)',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-28 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-20 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '台北市中正區忠孝東路一段23號',
+    25.0447268,
+    121.5249203,
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    350
+);
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000004',
+    'P0000018',
+    '張學友經典《袖刷毛T-shirt 灰(grey》',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-28 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-22 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '台北市中正區忠孝東路一段23號',
+    25.0447268,
+    121.5249203,
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    1100
+);
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000018',
+    'P0000004',
+    '五月天Mayday/ [LIFE人生無限]互動LED螢光棒 (白)',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-27 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-19 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '台北市中正區忠孝東路一段23號',
+    25.0447268,
+    121.5249203,
+    TO_DATE('2019-01-20 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    121
+);
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000004',
+    'P0000002',
+    '[五月天LIFE] 原來的我們 第五分隊歸隊粉T (FS.FM)',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-27 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-28 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '台北市中正區忠孝東路一段23號',
+    25.0447268,
+    121.5249203,
+    TO_DATE('2019-01-24 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    650
+);
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000001',
+    'P0000005',
+    '五月天 / [LIFE] 黑暗騎士 第五分隊公仔',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-27 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-18 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    NULL,
+    NULL,
+    'process1',
+    '桃園市桃園區永安北路404號',
+    25.0169692,
+    121.2906873,
+    TO_DATE('2019-01-20 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    3999
+);
+
+INSERT INTO GROUP_OPEN VALUES(
+    'G'||LPAD(to_char(GROUP_NO_SEQ.NEXTVAL),4,'0'),
+    'M000001',
+    'P0000001',
+    '[五月天LIFE] 第五分隊 五度歸巢 T (黑/白兩色) ',
+    10,
+    NULL,
+    NULL,
+    TO_DATE('2018-12-28 13:00:00','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
     NULL,
     NULL,
     'fail2',
-    '桃園市桃園區中正路420號',
-    25.0003198,
-    121.2997996,
-    TO_DATE('2018-01-01 15:00:00','YYYY-MM-DD hh24:mi:ss'),
-    2000
+    '桃園市中壢區中大路100號',
+    25.0447622,
+    121.5245638,
+    TO_DATE('2019-01-30 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    600
 );
 
 --揪團討論區
@@ -5602,11 +5740,11 @@ CREATE TABLE  GROUP_MEMBER(
      MEMBER_NO VARCHAR2(7) NOT NULL
     ,GROUP_NO  VARCHAR2(6) NOT NULL
     ,JOIN_TIME TIMESTAMP
-    ,PRODUCT_QUANTITY NUMBER(6)
+    ,PRODUCT_QUANTITY NUMBER(6) DEFAULT 0
     ,PAY_STATUS VARCHAR2(10)
     ,GROUP_MEMBER_STATUS VARCHAR2(10)
     ,LOG_OUT_REASON VARCHAR2(400)
-    ,ORDER_PHONE NUMBER(10)
+    ,ORDER_PHONE VARCHAR2(15)
     ,PAY_METHODS VARCHAR2(10)
     ,CONSTRAINT GROUP_MEMBER_FK PRIMARY KEY (MEMBER_NO,GROUP_NO)
     ,FOREIGN KEY(MEMBER_NO) REFERENCES MEMBER (MEMBER_NO)
@@ -5621,7 +5759,7 @@ INSERT INTO GROUP_MEMBER VALUES(
     TO_DATE('2018-12-04 190000','YYYY-MM-DD hh24miss'),
     3,
     'COMPLETE2',
-    'withgroup',
+    'grouplead',
     NULL,
     0973645829,
     'EWALLET'
@@ -5694,6 +5832,205 @@ INSERT INTO GROUP_MEMBER VALUES(
     'withgroup',
     NULL,
     0927384956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000019',
+    'G0004',
+    TO_DATE('2018-12-07 130048','YYYY-MM-DD hh24miss'),
+    8,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0927154956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000016',
+    'G0005',
+    TO_DATE('2018-12-07 130048','YYYY-MM-DD hh24miss'),
+    8,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0927127956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000012',
+    'G0006',
+    TO_DATE('2018-12-07 130048','YYYY-MM-DD hh24miss'),
+    8,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000008',
+    'G0006',
+    TO_DATE('2018-12-10 130048','YYYY-MM-DD hh24miss'),
+    8,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000002',
+    'G0006',
+    TO_DATE('2018-12-27 130048','YYYY-MM-DD hh24miss'),
+    4,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000001',
+    'G0007',
+    TO_DATE('2018-12-20 110048','YYYY-MM-DD hh24miss'),
+    4,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000003',
+    'G0008',
+    TO_DATE('2018-12-11 110048','YYYY-MM-DD hh24miss'),
+    3,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000006',
+    'G0009',
+    TO_DATE('2018-12-18 130048','YYYY-MM-DD hh24miss'),
+    3,
+    'COMPLETE2',
+    'withgroup',
+    NULL,
+    0923327956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000010',
+    'G0010',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    3,
+    'COMPLETE2',
+    'quit',
+    NULL,
+    0923447956,
+    'EWALLET'
+);
+
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000007',
+    'G0002',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    4,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0923337956,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000009',
+    'G0003',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0923333356,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000020',
+    'G0004',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0923113356,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000018',
+    'G0005',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0923113356,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000004',
+    'G0006',
+    TO_DATE('2018-12-19 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0923113333,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000018',
+    'G0007',
+    TO_DATE('2018-12-20 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0916485960,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000004',
+    'G0008',
+    TO_DATE('2019-01-02 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0916485960,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000001',
+    'G0009',
+    TO_DATE('2019-01-03 140048','YYYY-MM-DD hh24miss'),
+    1,
+    'COMPLETE2',
+    'grouplead',
+    NULL,
+    0916433960,
+    'EWALLET'
+);
+INSERT INTO GROUP_MEMBER VALUES(
+    'M000001',
+    'G0010',
+    TO_DATE('2019-12-29 140048','YYYY-MM-DD hh24miss'),
+    3,
+    'COMPLETE2',
+    'group_lead',
+    NULL,
+    0916333960,
     'EWALLET'
 );
 
