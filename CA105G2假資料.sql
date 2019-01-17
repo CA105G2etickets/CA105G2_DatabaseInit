@@ -5078,7 +5078,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,600
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_TIMESTAMP('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_TIMESTAMP('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5097,7 +5097,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,650
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5116,7 +5116,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,1220
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5135,7 +5135,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,121
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5154,7 +5154,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,3999
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5173,7 +5173,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5192,7 +5192,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5211,7 +5211,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,750
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5230,7 +5230,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,420
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5249,7 +5249,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,250
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5268,7 +5268,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,135
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5287,7 +5287,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,750
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5306,7 +5306,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,180
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5325,7 +5325,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,500
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5344,7 +5344,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,350
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5363,7 +5363,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,350
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5382,7 +5382,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,250
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
@@ -5401,7 +5401,7 @@ INSERT INTO GOODS VALUES
     ,NULL
     ,1100
     ,0
-    ,'已上架'
+    ,'confirmed'
     ,TO_DATE('2018-12-15 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,TO_DATE('2019-01-26 01:10:00','YYYY-MM-DD HH24:MI:SS')
     ,0
