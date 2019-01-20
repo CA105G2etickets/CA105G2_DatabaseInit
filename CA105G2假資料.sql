@@ -169,7 +169,6 @@ NOCYCLE
 NOCACHE;
 
 Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'如何加入會員？','每人限制僅可申請一個會員帳號，此會員帳號需綁定電子郵件進行驗證，通過驗證後，才可開始於網站購票。','購票');
-Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'如何加入會員？','每人限制僅可申請一個會員帳號，此會員帳號需綁定電子郵件進行驗證，通過驗證後，才可開始於網站購票。','購物');
 Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'為什麼我收不到系統通知信？','請先檢查垃圾郵件。','其他');
 Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'可以在超商購票嗎？','本系統目前僅供網站與APP購票。','購票');
 Insert into FAQ (FAQ_NO,QUESTION,ANSWER,FAQ_CLASSIFICATION) values ('FAQ'||LPAD(to_char(faq_no_seq.NEXTVAL), 3, '0'),'一筆訂單最多可買幾張票？','購票張數依活動有不同的規定，購票前請於活動資訊查詢每個活動的購票需知。','購票');
@@ -321,6 +320,36 @@ values (
     •本網站僅限信用卡繳款。'
   , TO_DATE('1970/1/1','YYYY/MM/DD') 
   ,'A001'
+  );
+  
+Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNCE_DATE,ADMINISTRATOR_NO) 
+values (
+  'S'||LPAD(to_char(news_N_seq.NEXTVAL), 2, '0')
+  ,'S'
+  ,'預防詐騙提醒'
+  ,'近日詐騙集團猖獗, 假借各大購物網站(通常是大陸口音)名義, 並竄改來電顯示偽裝成該公司或銀行的電話號碼, 以慣用伎倆佯稱訂單轉帳,授權,分期,送貨簽收,結賬,等錯誤問題, 恐嚇會被連續扣款, 若不從, 歹徒就再恐嚇, 這表示自動放棄權益, 並有錄音存證等語, 然後再假藉銀行人員或警察再打來(同樣竄改來電顯示), 要求到ATM提款機取消連續扣款設定..等語, 實際卻是可惡的轉帳詐騙手法, 請大家小心提防。'
+  , TO_DATE('1990/3/1','YYYY/MM/DD') 
+  ,'A002'
+  );
+  
+Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNCE_DATE,ADMINISTRATOR_NO) 
+values (
+  'E'||LPAD(to_char(news_N_seq.NEXTVAL), 2, '0')
+  ,'E'
+  ,'檔期異動通知'
+  ,'感謝您訂購票券，因檔期異動，故取消演出。'
+  , TO_DATE('2010/7/19','YYYY/MM/DD') 
+  ,'A004'
+  );
+  
+Insert into NEWS (NEWS_NO,NEWS_CLASSIFICATION_NO,NEWS_TITLE,NEWS_CONTENT,ANNOUNCE_DATE,ADMINISTRATOR_NO) 
+values (
+  'N'||LPAD(to_char(news_N_seq.NEXTVAL), 2, '0')
+  ,'N'
+  ,'超商將暫停相關服務'
+  ,'超商將暫停網路相關服務，特此告知，煩請協助務必將以上訊息通報相關人員知悉，謝謝！'
+  , TO_DATE('2017/5/23','YYYY/MM/DD') 
+  ,'A003'
   );
 
 
