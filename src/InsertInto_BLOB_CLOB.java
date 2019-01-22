@@ -17,6 +17,14 @@ public class InsertInto_BLOB_CLOB {
 	private static final String PASSWORD = "123456";
 	
 	public static void main(String[] args) {
+		Connection con = null;
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			con = DriverManager.getConnection(URL, USER, PASSWORD);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		
 		ArrayList<FolderInfo> folderList = new ArrayList<FolderInfo>();
 		
 		folderList.add(new FolderInfo("BLOB_EVENT_TITLE", "EVETIT_NO", 5));					
@@ -49,21 +57,29 @@ public class InsertInto_BLOB_CLOB {
 		    } else {
 		    	for (int j = 0; j < files.length; j++) {		    		
 		    		if ("BLOB".equals(folderName.substring(0, 4))) {
-		    			writeBLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength);
+		    			writeBLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength, con);
 		    		} else {
-		    			writeCLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength);		    			
-		    		}		    			
+		    			writeCLOB(folderName, files[j], folderList.get(i).pkName, folderList.get(i).pkNameLength, con);		    			
+		    		}	
+		    		System.out.println(files[j]);
 		    	}
 		    }
 		} 
 		 
+		if(con != null) {
+			try {
+				con.close();
+			} catch (SQLException se){
+				se.printStackTrace();
+			}
+		}
 		System.out.println("完成BLOB和CLOB的更新");		
 	}
 	
 	
 	
 	
-	public static void writeCLOB(String dirName, String fileName, String pkName, int pkNameLength) {		
+	public static void writeCLOB(String dirName, String fileName, String pkName, int pkNameLength, Connection con) {		
 		
 		String pkNO = fileName.substring(0, pkNameLength);
 		String columnName = fileName.substring(pkNameLength+1, fileName.length()-4);
@@ -73,14 +89,14 @@ public class InsertInto_BLOB_CLOB {
 		
 		String SQL = sb.append("UPDATE ").append(tableName).append(" SET ").append(columnName).append(" = ? ").append("WHERE ").append(pkName).append(" = ?").toString();
 				
-		Connection con = null;
+//		Connection con = null;
 		PreparedStatement pstat = null;	
 		Reader reader = null;
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection(URL, USER, PASSWORD);
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//			con = DriverManager.getConnection(URL, USER, PASSWORD);
 			pstat = con.prepareStatement(SQL);
 			
 			pstat.setString(2, pkNO);
@@ -92,8 +108,8 @@ public class InsertInto_BLOB_CLOB {
 			
 			pstat.executeUpdate();
 			
-		} catch (ClassNotFoundException ce) {
-			ce.printStackTrace();
+//		} catch (ClassNotFoundException ce) {
+//			ce.printStackTrace();
 		} catch (SQLException se) {
 			se.printStackTrace();
 		} catch(IOException ie){
@@ -113,17 +129,17 @@ public class InsertInto_BLOB_CLOB {
 					se.printStackTrace();
 				}
 			}
-			if(con != null) {
-				try {
-					con.close();
-				} catch (SQLException se){
-					se.printStackTrace();
-				}
-			}
+//			if(con != null) {
+//				try {
+//					con.close();
+//				} catch (SQLException se){
+//					se.printStackTrace();
+//				}
+//			}
 		}
 	}
 	
-	public static void writeBLOB(String dirName, String fileName, String pkName, int pkNameLength) {
+	public static void writeBLOB(String dirName, String fileName, String pkName, int pkNameLength, Connection con) {
 		
 		String pkNO = fileName.substring(0, pkNameLength);
 		String columnName = fileName.substring(pkNameLength+1, fileName.length()-4);
@@ -132,15 +148,15 @@ public class InsertInto_BLOB_CLOB {
 		StringBuilder sb = new StringBuilder();		
 		String SQL = sb.append("UPDATE ").append(tableName).append(" SET ").append(columnName).append(" = ? ").append("WHERE ").append(pkName).append(" = ?").toString();
 				
-		Connection con = null;
+//		Connection con = null;
 		PreparedStatement pstat = null;		
 		FileInputStream fis = null;	
 		ByteArrayOutputStream baos = null;
 		
 		try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection(URL, USER, PASSWORD);
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//			con = DriverManager.getConnection(URL, USER, PASSWORD);
 			pstat = con.prepareStatement(SQL);
 			
 			pstat.setString(2, pkNO);
@@ -160,8 +176,8 @@ public class InsertInto_BLOB_CLOB {
 						
 			pstat.executeUpdate();
 			
-		} catch (ClassNotFoundException ce) {
-			ce.printStackTrace();
+//		} catch (ClassNotFoundException ce) {
+//			ce.printStackTrace();
 		} catch (SQLException se) {
 			se.printStackTrace();
 		} catch(IOException ie){
@@ -188,13 +204,13 @@ public class InsertInto_BLOB_CLOB {
 					se.printStackTrace();
 				}
 			}
-			if(con != null) {
-				try {
-					con.close();
-				} catch (SQLException se){
-					se.printStackTrace();
-				}
-			}
+//			if(con != null) {
+//				try {
+//					con.close();
+//				} catch (SQLException se){
+//					se.printStackTrace();
+//				}
+//			}
 		}
 	}
 	
