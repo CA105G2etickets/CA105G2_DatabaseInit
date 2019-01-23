@@ -6523,8 +6523,6 @@ Insert into FAVORITE_GOODS values ('M000002','P0000007');
 Insert into FAVORITE_GOODS values ('M000002','P0000003');
 Insert into FAVORITE_GOODS values ('M000003','P0000004');
 Insert into FAVORITE_GOODS values ('M000004','P0000002');
-Insert into FAVORITE_GOODS values ('M000006','P0000018');
-Insert into FAVORITE_GOODS values ('M000005','P0000011');
 Insert into FAVORITE_GOODS values ('M000007','P0000010');
 Insert into FAVORITE_GOODS values ('M000011','P0000003');
 Insert into FAVORITE_GOODS values ('M000004','P0000007');
