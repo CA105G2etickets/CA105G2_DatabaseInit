@@ -131,7 +131,7 @@ NOCYCLE
 NOCACHE;
 
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '吳冠宏', 'vladylo98@gmail.com', '0972-037098', 'H179034814' , 'vladylo98' , '123456' , '98376' , to_timestamp('1991/9/1  18:27:31','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '路依珊', 'ca105g2demo@gmail.com', '0972-782850', 'Y274969950' , 'Thos1958' , 'eoGh4ohy' , '2245' , to_timestamp('1991/11/13  00:42:24','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '阿翔', 'ca105g2demo@gmail.com', '0972-782850', 'Y274969950' , 'Thos1958' , 'eoGh4ohy' , '2245' , to_timestamp('1991/11/13  00:42:24','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '姚儒玉', 'YaoRuYu@jourrapide.com', '0902-277481' , 'V265219642' , 'Toopece40' , 'ooy0Eec0zoo' , '4586' , to_timestamp('1992/10/22  09:08:55','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '潘怡帆', 'PanYiFan@dayrep.com', '0937-626715' , 'T270735473' , 'Hunned' , 'rieZoow2' , '6543' , to_timestamp('1993/7/30  14:08:07','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '莊睿倩', 'ZhuangRuiQing@dayrep.com', '0937-521590' , 'H200290577' , 'Etwithe61' , 'Cie6feow' , '82015' , to_timestamp('1996/6/10  09:16:52','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
@@ -148,8 +148,8 @@ Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '吳隆衣', 'WuLongYi@jourrapide.com', '0989-092989' , 'C141647806' , 'Tintles' , 'aiDee0zeeTh' , '3880' , to_timestamp('2012/3/23  19:49:48','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '郭貿昌', 'GuoMaoChang@rhyta.com', '0916-441993' , 'N110910088' , 'Howeenton' , 'ew7Uo0ai' , '6602' , to_timestamp('2013/9/30  11:00:06','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '白承峰', 'BoZhengFeng@dayrep.com', '0964-194913' , 'A160072505' , 'Thadince' , 'acheiY1kaef' , '1932' , to_timestamp('2016/10/10  06:46:39','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '洪淑惠', 'HongChuHui@teleworm.us', '0987-653650' , 'E249007273' , 'Thaide1992' , 'nai0eiR6ifu' , '3423' , to_timestamp('2018/7/25  20:38:16','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
-Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '段嘉瑩', 'DuanJiaYing@teleworm.us', '0972-258975' , 'A289803497' , 'Betre1933' , 'UMah2ohx' , '65693' , to_timestamp('2018/12/10  03:00:30','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '小明', 'HongChuHui@teleworm.us', '0987-653650' , 'E249007273' , 'Thaide1992' , 'nai0eiR6ifu' , '3423' , to_timestamp('2018/7/25  20:38:16','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
+Insert into MEMBER (MEMBER_NO,MEMBER_FULLNAME,EMAIL,PHONE,IDCARD,MEMBER_ACCOUNT,MEMBER_PASSWORD,EWALLET_BALANCE,CREATION_DATE,PROFILE_PICTURE,MEMBER_STATUS) values ('M'||LPAD(to_char(member_no_seq.NEXTVAL), 6, '0'), '阿森', 'DuanJiaYing@teleworm.us', '0972-258975' , 'A289803497' , 'Betre1933' , 'UMah2ohx' , '65693' , to_timestamp('2018/12/10  03:00:30','YYYY/MM/DD   HH24:MI:SS') , null , 'normal' );
 
 
 
@@ -6529,12 +6529,12 @@ Insert into FAVORITE_GOODS values ('M000007','P0000010');
 Insert into FAVORITE_GOODS values ('M000011','P0000003');
 Insert into FAVORITE_GOODS values ('M000004','P0000007');
 Insert into FAVORITE_GOODS values ('M000018','P0000017');
-Insert into FAVORITE_GOODS values ('M000020','P0000003');
+Insert into FAVORITE_GOODS values ('M000018','P0000003');
 Insert into FAVORITE_GOODS values ('M000002','P0000017');
 Insert into FAVORITE_GOODS values ('M000012','P0000012');
 Insert into FAVORITE_GOODS values ('M000017','P0000003');
 Insert into FAVORITE_GOODS values ('M000018','P0000001');
-Insert into FAVORITE_GOODS values ('M000019','P0000002');
+Insert into FAVORITE_GOODS values ('M000016','P0000002');
 Insert into FAVORITE_GOODS values ('M000007','P0000007');
 Insert into FAVORITE_GOODS values ('M000005','P0000004');
 Insert into FAVORITE_GOODS values ('M000005','P0000007');
@@ -6545,6 +6545,16 @@ Insert into FAVORITE_GOODS values ('M000013','P0000005');
 Insert into FAVORITE_GOODS values ('M000001','P0000005');
 Insert into FAVORITE_GOODS values ('M000008','P0000004');
 Insert into FAVORITE_GOODS values ('M000013','P0000016');
+Insert into FAVORITE_GOODS values ('M000019','P0000001');
+Insert into FAVORITE_GOODS values ('M000019','P0000002');
+Insert into FAVORITE_GOODS values ('M000019','P0000003');
+Insert into FAVORITE_GOODS values ('M000019','P0000004');
+Insert into FAVORITE_GOODS values ('M000019','P0000005');
+Insert into FAVORITE_GOODS values ('M000020','P0000001');
+Insert into FAVORITE_GOODS values ('M000020','P0000002');
+Insert into FAVORITE_GOODS values ('M000020','P0000003');
+Insert into FAVORITE_GOODS values ('M000020','P0000004');
+Insert into FAVORITE_GOODS values ('M000020','P0000005');
 
 
 ----------------------------------------------------------------------------------------------------------------
