@@ -5566,7 +5566,7 @@ INSERT INTO GROUP_OPEN VALUES(
     NULL,
     NULL,
     TO_DATE('2018-12-29 20:00:00','YYYY-MM-DD hh24:mi:ss'),
-    TO_DATE('2019-01-23 19:00:20','YYYY-MM-DD hh24:mi:ss'),
+    TO_DATE('2019-01-28 19:00:20','YYYY-MM-DD hh24:mi:ss'),
     NULL,
     NULL,
     'process1',
